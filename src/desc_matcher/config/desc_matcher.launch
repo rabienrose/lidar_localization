@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<launch>
+  <rosparam command="load" file="$(find desc_matcher)/config/segmatch.yaml"/>
+  <node name="desc_matcher" pkg="desc_matcher" type="desc_matcher" output="screen" respawn="false"></node>
+</launch>
